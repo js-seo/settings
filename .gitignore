@@ -1,4 +1,6 @@
-*/
+*/*
 !.janus/
 !.janus/*
 !.vimrc.*
+.confidentials
+*zsh*

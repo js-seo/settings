@@ -20,7 +20,13 @@
   $ npm install -g yarn
   ```
 
+- .zshrc
 
+  ```bash
+  export GIT_CEILING_DIRECTORIES=$HOME
+  source $HOME/.aliases
+  source $HOME/.confidentials
+  ```
 
 #Template for `~/.aws/credentials`
 

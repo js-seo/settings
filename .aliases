@@ -1,0 +1,2 @@
+alias sdf='serverless deploy function --function'
+alias gs='git status'
