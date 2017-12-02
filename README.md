@@ -7,17 +7,17 @@
 
 - Zsh
 
-  - `$ brew install nvm`
+  - `$ brew install zsh`
   - [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 
 - [janus](https://github.com/carlhuda/janus)
 
-- Yarn
+- Node and Yarn
 
   ```bash
-  $ brew install nvm
-  $ nvm install stable
-  $ npm install -g yarn
+  brew install nvm
+  nvm install stable
+  brew install yarn --without-node
   ```
 
 - .zshrc
@@ -27,6 +27,19 @@
   source $HOME/.aliases
   source $HOME/.confidentials
   ```
+
+- Input source switcher
+
+  - INSERT 모드에서 나갈 때 자동으로 영문모드로 바꿔줌
+    ```bash
+    git clone git@github.com:vovkasm/input-source-switcher.git
+    cd input-source-switcher
+    mkdir build
+    cd build
+    cmake ..
+    make
+    make install
+    ```
 
 #Template for `~/.aws/credentials`
 
