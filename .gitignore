@@ -1,10 +1,6 @@
 */*
 !.janus/*
 .zsh*
-# janus
-.vimrc
-# janus
-.gvimrc
 .DS_Store
 .viminfo
 .CFUserTextEncoding

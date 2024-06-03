@@ -10,14 +10,17 @@
   - `$ brew install zsh`
   - [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 
-- [janus](https://github.com/carlhuda/janus)
+- Vim
+
+  - Copy `.vimrc` at `~/.vimrc`
+  - Set up [Vundle](https://github.com/VundleVim/Vundle.vim) and install plugins
 
 - Node and Yarn
 
   ```bash
-  brew install nvm
-  nvm install stable
-  brew install yarn --without-node
+  brew install n
+  sudo n 20
+  sudo npm install -g yarn
   ```
 
 - .zshrc
