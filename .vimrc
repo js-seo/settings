@@ -69,7 +69,7 @@ set hlsearch    " highlight matches
 set incsearch   " incremental searching
 set ignorecase  " searches are case insensitive...
 set smartcase   " ... unless they contain at least one capital letter
-set wildignore=*/node_modules/*
+set wildignore+=**/node_modules/**,yarn.lock
 
 ""
 "" Others
@@ -89,4 +89,10 @@ set laststatus=2
 set statusline=\ %f\ %m\ %r\ %=%v:%l/%L\
 let g:ctrlp_working_path_mode = 'a'
 
-set wildignore+=**/node_modules/**
+cmap Wq wq
+
+function! OpenClaudeWithCurrentFile()
+  execute 'vsplit | terminal ++curwin claude "I am working on ' . expand('%:p') . '"'
+endfunction
+
+nnoremap <leader>cc :call OpenClaudeWithCurrentFile()<CR>
